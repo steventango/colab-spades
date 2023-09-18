@@ -1,21 +1,23 @@
 # Colab SPAdes
 
-This Google Colab notebook can be used to run
-[SPAdes](https://github.com/ablab/spades) on [Google
+The Google Colab notebook
+[SPAdes_Colab.ipynb](https://colab.research.google.com/github/steventango/colab-spades/blob/main/SPAdes_Colab.ipynb),
+can be used to run [SPAdes](https://github.com/ablab/spades) on [Google
 Colab](https://colab.research.google.com/).
 
-<!-- Motivation -->
-<!-- Other contributors -->
-
 It uses a precompiled binary of SPAdes that is compatible with Google
-Colab's Python 3 environment.
+Colab.
 
 ## Compile SPAdes for Colab
 
-```
+```bash
 docker build --build-arg="SPADES_VERSION=3.15.5" --output . .
-gh release create v${version} ./SPAdes-${version}-Colab.tar.gz
+gh release create v${SPADES_VERSION} ./SPAdes-${SPADES_VERSION}-Colab.tar.gz
 ```
+
+## Contributors
+- Steven Tang
+- Renald Legaspi
 
 ## References
 
