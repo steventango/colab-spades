@@ -8,7 +8,15 @@ Colab](https://colab.research.google.com/).
 It uses a precompiled binary of SPAdes that is compatible with Google
 Colab.
 
+Using Google Colab for bioinformatics tools like SPAdes is useful as manually installing
+tools is not very convenient and web servers hosted by small individual labs are vulnerable
+to going down. Google Colab provides free, accessible, and reliable compute and user interface
+for bioinformatic tools.
+
+
 ## Compile SPAdes for Colab
+
+We cab use Docker to compile SPAdes for many environments, including Colab.
 
 ```bash
 docker build --build-arg="SPADES_VERSION=3.15.5" --output . .
